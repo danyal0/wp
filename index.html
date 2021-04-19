@@ -1,81 +1,42 @@
-<!DOCTYPE html>
-<html>
-	<script>
-	Object.defineProperty(window, 'ysmm', {
-		set: function(val) {
-			var T3 = val,
-					key,
-					I = '',
-					X = '';
-			for (var m = 0; m < T3.length; m++) {
-				if (m % 2 == 0) {
-					I += T3.charAt(m);
-				} else {
-					X = T3.charAt(m) + X;
-				}
-			}
-			T3 = I + X;
-			var U = T3.split('');
-			for (var m = 0; m < U.length; m++) {
-				if (!isNaN(U[m])) {
-					for (var R = m + 1; R < U.length; R++) {
-						if (!isNaN(U[R])) {
-							var S = U[m]^U[R];
-							if (S < 10) {
-								U[m] = S;
-							}
-							m = R;
-							R = U.length;
-						}
-					}
-				}
-			}
-			T3 = U.join('');
-			T3 = window.atob(T3);
-			T3 = T3.substring(T3.length - (T3.length - 16));
-			T3 = T3.substring(0, T3.length - 16);
-			key = T3;
-			if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
-				document.write('<!--');
-				window.stop();
+<!doctype html>
 
-				window.onbeforeunload = null;
-				window.location = key;
-			}
-		}
-	});
-	</script>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-		<title>Welcome to mumstudents.org</title>
-		<style>
-			body {
-				text-align: center;
-			}
-		</style>
-	</head>
-	<body data-new-gr-c-s-check-loaded="14.983.0" data-gr-ext-installed="" cz-shortcut-listen="true">
-		<div class="logo"><img src="./src/images/MUM_Logo.png"></div>
-		<h1>Welcome to mumstudents.org!</h1>
-		<p>If you're reading this you are probably either an <a href="http://mum.edu/">MUM</a> student in a class that uses this machine -- or someone related to a student interested in seeing their work.</p>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
 
-		<p>If you know the username of the person whose home page you want to see, you can go there by putting a ~ in front of their username on the URL bar. For example <a href="http://mumstudents.org/~kdaley">http://mumstudents.org/~kadely</a> leads to Professor Daley's page.</p>
+  <title>Home Page of Danyal Javed</title>
+  <meta name="description" content="My Portfolio">
+  <meta name="author" content="DanyalJaved">
 
-		<p>Course materials are sometimes also hosted on this machine. For example: <a href="http://mumstudents.org/cs472">http://mumstudents.org/cs472</a> takes you to the course material for CS 472.</p>
-	
+</head>
 
-		<div class="betternet-wrapper"></div>
+<body>
+	<header>
+	<img src="./src/images/dj.jpg">
+<h1>Danyal Javed</h1>
+</header>
+	<nav></nav>
+	<aside>
+		<ul>
+			<li>Monday</li>
+			<li>Tuesday</li>
+			<li>Wednesday</li>
+			<li>Thursday</li>
+			<li>Friday</li>
+			<li>Saturday</li>
+			<li>Sunday</li>
+		</ul>
 
-		<p> 
-			<a href="https://validator.w3.org/check/referer">
-				<img src=http://mumstudents.org/cs472/2013-09/images/w3c-html.png alt="Validate" /> 
-			</a>
-		</p>
-		3. CSS Validator
-		<p> 
-			<a href="https://jigsaw.w3.org/css-validator/check/referer">
-		 		<img src=http://jigsaw.w3.org/css-validator/images/vcss alt="Valid CSS!"/>
-			</a> 
-		</p> 
-	</body>
+	</aside>
+	<p> 
+<a href="https://validator.w3.org/check/referer">
+<img src=http://mumstudents.org/cs472/2013-09/images/w3c-html.png alt="Validate" /> 
+</a>
+</p>
+<p> 
+<a href="https://jigsaw.w3.org/css-validator/check/referer">
+ <img src=http://jigsaw.w3.org/css-validator/images/vcss alt="Valid CSS!"/>
+</a> 
+</p> 
+</body>
 </html>
