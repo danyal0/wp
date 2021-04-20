@@ -1,0 +1,83 @@
+.container {
+    background-color: #424242;
+    color: #BBBBBB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    padding: 10px;
+    width: 70%;
+}
+h1, h2{
+    color: #6666AA;
+    font-weight: bold;
+    clear: both;
+}
+.highlight{
+    color: #BBBB66;
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+
+/*pseudo-elements*/
+p::first-letter {
+    background-color: #9b009b;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+/*pseudo-classes*/
+.links{
+    color: #CC3333;
+    text-decoration: none;
+}
+/*.links.link{   /*unvisited link
+    
+}*/
+.links:visited{   /*visited link*/
+    color: #ce6f6f;
+}
+.links:hover{   /*mouse over link, hover MUST after link, visited*/
+    color: #FF0000;
+    text-decoration: underline;
+}
+.links:active{   /*selected link, active MUST after hover*/
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+dl{
+    display:none;
+}
+li:hover dl{
+    display:block;
+    cursor: pointer;
+}
+dt{
+    font-weight:bold;
+}
+dd{
+    font-style: italic;
+}
+
+#mood{
+    list-style: none;
+}
+#mood span{
+    display: block;
+    text-align: center;
+}
+#mood img{
+    height: 240px;
+    transition: all 2s;
+}
+#mood li{
+    float: left;
+    padding: 10px;
+}
+#mood img:hover{
+    transform: rotate(180deg);
+    width:250px;
+    height:250px;
+    cursor: pointer;
+    border-radius: 70%;
+}
