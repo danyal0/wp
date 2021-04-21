@@ -1,0 +1,40 @@
+#css-zen-garden{
+    background-color: #424242;
+    color:#6666AA;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+.page-wrapper{
+    background-color: #FFFFFF55;
+    border: 5px solid #FFFFFF;
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 20px;
+}
+
+.intro, #zen-supporting, .sidebar{
+    background-color: lightgray;
+}
+
+a{
+    text-decoration: none;
+    color: #770000;
+}
+a:visited{
+    color: #58324c;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6{
+    background-color: #424242;
+    text-align: center;
+}
+header:hover > h1, header:hover > h2, div:hover > h3, 
+div:hover > h4, div:hover > h5, div:hover > h6{
+    color: #00BFFFFF;
+}
