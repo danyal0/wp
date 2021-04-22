@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styleAssignment4.css">
+    <title>Assignment 4 - Form example</title>
+</head>
+<body>
+    <div class="nav">
+        <h1>Workshop Registration</h1>
+    </div>
+    <div class="container">
+        <form action="#" method="POST">
+            <div class="maindiv">
+                <div class="left_part">
+                    <ul>
+                        <li><p class="subtitle">Register now while seats are available!</p></li>
+                        <li><label for="fn">First Name<span class="required">*</span></label><input type="text" id="fn" required/></li>
+                        <li><label for="ln">Last Name<span class="required">*</span></label><input type="text" id="ln" required/></li>
+                        <li><label for="coin">Company/Institution<span class="required">*</span></label><input type="text" id="coin" required/></li>
+                        <li><label for="addr">Address<span class="required">*</span></label><textarea id="addr" required></textarea></li>
+                        <li><label for="ci">City</label><input type="text" id="ci"/></li>
+                        <li><label for="pr">State/Province/Region</label><select>
+                            <option value="" selected disabled hidden>Choose one</option>
+                            <option>Alabama</option>
+                            <option>Arizona</option>
+                            <option>Iowa</option>
+                        </select></li>
+                        <li><label for="co">Country</label><select id="co">
+                            <option value="" selected disabled hidden>Choose one</option>
+                            <option>Pakistan</option>
+                            <option>China</option>
+                            <option>United States</option>
+                        </select></li>
+                        <li><label for="em">Email<span class="required">*</span></label><input type="email" id="em" required/></li>
+                        <li><label for="pn">Phone Number (xxx-xxx-xxxx)<span class="required">*</span></label><input type="text" id="pn" pattern="^\d{3}-\d{3}-\d{4}$" required/></li>
+                    </ul>
+                </div>
+                <div class="right_part">
+                    <ul>
+                        <li><p class="subtitle">Lunch</p></li>
+                        <li><label for="mp">Meal Preference</label><select id="mp">
+                            <option value="" selected disabled hidden>Choose one</option>
+                            <option>Any Diet</option>
+                            <option>Vegetarian</option>
+                            <option>Vegan</option>
+                        </select></li>
+                        <li><p class="subtitle">Payment Details</p></li>
+                        <li><label class="pmode">Payment Mode</label><span class="cboxes">
+                                <span><input type="checkbox"/> Cash</span>
+                                <span><input type="checkbox"/> Cheque</span>
+                                <span><input type="checkbox"/> Demand Draft</span>
+                        </span>
+                        </li>
+                        <li><label for="dc">DD/Cheque No.</label><input type="number" id="dc"/></li>
+                        <li><label for="do">Drawn On (Bank Name)</label><input type="text" id="do"/></li>
+                        <li><label for="pa">Payable at</label><input type="datetime-local" id="pa"/></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="buttons">
+                <input class="button" type="submit"/>
+                <input class="button danger" type="reset"/>
+            </div>
+        </form>
+    </div>
+    <p style="text-align: right;">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdanyaljaved.tk%2Fassignment4.html" target="_blank">
+            <img src="./src/images/w3c-html.png" alt="Validate" />
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdanyaljaved.tk%2Fassignment4.html" target="_blank">
+            <img src="./src/images/vcss.gif" alt="Valid CSS!"/>
+        </a>
+    </p>
+
+    <a href="index.html" class="links">Return to main page</a>
+</body>
+</html>
