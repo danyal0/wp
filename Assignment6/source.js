@@ -1,10 +1,10 @@
 function makeArmy() {
     let shooters = [];
     let i = 0;
-    while (i < 2) {
+    while (i < 10) {
         let j = i;
         let shooter = function () {
-            alert(j);
+            console.log(j);
         };
         shooters.push(shooter);
         i++;
@@ -12,19 +12,19 @@ function makeArmy() {
     return shooters;
 }
 let army = makeArmy();
-army[0]();
+army.forEach(fn => fn());
 
 
-function printNumbers(from, to) {
-    let cur = from;
-    function doit() {
-        alert(cur);
-        if (cur == to) {
-            clearInterval(interval);
-        }
-        cur++;
-    }
-    doit();
-    let interval = setInterval(doit, 1000);
-}
-printNumbers(1, 5);
+// function printNumbers(from, to) {
+//     let cur = from;
+//     function doit() {
+//         alert(cur);
+//         if (cur == to) {
+//             clearInterval(interval);
+//         }
+//         cur++;
+//     }
+//     doit();
+//     let interval = setInterval(doit, 1000);
+// }
+// printNumbers(1, 5);
